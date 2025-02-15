@@ -1,0 +1,829 @@
+[
+    {
+        "transaction_id": "82195",
+        "amount": 31.8,
+        "customer_id": "20",
+        "merchant_id": "12",
+        "location": "New York",
+        "timestamp": "2025-02-15T06:32:21.673297Z",
+        "feature_vector": [
+            318.76,
+            30,
+            4,
+            0.42,
+            0.32
+        ]
+    },
+    {
+        "transaction_id": "24412",
+        "amount": 199.12,
+        "customer_id": "51",
+        "merchant_id": "44",
+        "location": "Los Angeles",
+        "timestamp": "2025-02-15T06:32:19.604695Z",
+        "feature_vector": [
+            323.69,
+            12,
+            27,
+            0.41,
+            0.58
+        ]
+    },
+    {
+        "transaction_id": "78177",
+        "amount": 131.43,
+        "customer_id": "38",
+        "merchant_id": "8",
+        "location": "Los Angeles",
+        "timestamp": "2025-02-15T06:32:17.555622Z",
+        "feature_vector": [
+            151.83,
+            96,
+            40,
+            0.57,
+            0.94
+        ]
+    },
+    {
+        "transaction_id": "19358",
+        "amount": 155.53,
+        "customer_id": "10",
+        "merchant_id": "39",
+        "location": "Chicago",
+        "timestamp": "2025-02-15T06:32:16.542021Z",
+        "feature_vector": [
+            390.44,
+            47,
+            37,
+            0.47,
+            0.57
+        ]
+    }
+]
+[
+    {
+        "transaction_id": "22969",
+        "amount": 417.81,
+        "customer_id": "95",
+        "merchant_id": "11",
+        "location": "Houston",
+        "timestamp": "2025-02-15T06:41:03.038088Z",
+        "feature_vector": [
+            131.17,
+            58,
+            4,
+            0.17,
+            1.0
+        ]
+    },
+    {
+        "transaction_id": "50552",
+        "amount": 92.97,
+        "customer_id": "97",
+        "merchant_id": "19",
+        "location": "Houston",
+        "timestamp": "2025-02-15T06:40:59.001367Z",
+        "feature_vector": [
+            172.6,
+            53,
+            35,
+            0.55,
+            0.4
+        ]
+    },
+    {
+        "transaction_id": "47554",
+        "amount": 394.29,
+        "customer_id": "2",
+        "merchant_id": "50",
+        "location": "New York",
+        "timestamp": "2025-02-15T06:40:55.964355Z",
+        "feature_vector": [
+            128.16,
+            44,
+            50,
+            0.53,
+            0.44
+        ]
+    },
+    {
+        "transaction_id": "81504",
+        "amount": 206.73,
+        "customer_id": "58",
+        "merchant_id": "2",
+        "location": "Los Angeles",
+        "timestamp": "2025-02-15T06:40:53.921113Z",
+        "feature_vector": [
+            215.05,
+            52,
+            9,
+            0.88,
+            0.16
+        ]
+    },
+    {
+        "transaction_id": "32951",
+        "amount": 168.13,
+        "customer_id": "42",
+        "merchant_id": "1",
+        "location": "Chicago",
+        "timestamp": "2025-02-15T06:40:51.910186Z",
+        "feature_vector": [
+            55.87,
+            38,
+            11,
+            0.58,
+            0.79
+        ]
+    },
+    {
+        "transaction_id": "90288",
+        "amount": 424.71,
+        "customer_id": "85",
+        "merchant_id": "43",
+        "location": "New York",
+        "timestamp": "2025-02-15T06:40:49.892884Z",
+        "feature_vector": [
+            209.26,
+            15,
+            17,
+            0.86,
+            0.28
+        ]
+    },
+    {
+        "transaction_id": "22466",
+        "amount": 158.01,
+        "customer_id": "80",
+        "merchant_id": "12",
+        "location": "New York",
+        "timestamp": "2025-02-15T06:40:47.877548Z",
+        "feature_vector": [
+            22.53,
+            49,
+            45,
+            0.17,
+            0.23
+        ]
+    },
+    {
+        "transaction_id": "44641",
+        "amount": 134.5,
+        "customer_id": "67",
+        "merchant_id": "14",
+        "location": "New York",
+        "timestamp": "2025-02-15T06:40:46.871065Z",
+        "feature_vector": [
+            26.98,
+            4,
+            5,
+            0.53,
+            0.29
+        ]
+    },
+    {
+        "transaction_id": "59141",
+        "amount": 254.79,
+        "customer_id": "42",
+        "merchant_id": "33",
+        "location": "Chicago",
+        "timestamp": "2025-02-15T06:40:45.851570Z",
+        "feature_vector": [
+            288.05,
+            29,
+            27,
+            0.58,
+            0.35
+        ]
+    },
+    {
+        "transaction_id": "97535",
+        "amount": 286.15,
+        "customer_id": "73",
+        "merchant_id": "9",
+        "location": "Chicago",
+        "timestamp": "2025-02-15T06:40:44.841780Z",
+        "feature_vector": [
+            119.91,
+            18,
+            34,
+            0.87,
+            0.29
+        ]
+    },
+    {
+        "transaction_id": "53597",
+        "amount": 33.36,
+        "customer_id": "82",
+        "merchant_id": "38",
+        "location": "Los Angeles",
+        "timestamp": "2025-02-15T06:40:43.831602Z",
+        "feature_vector": [
+            56.7,
+            17,
+            41,
+            0.92,
+            0.45
+        ]
+    },
+    {
+        "transaction_id": "71114",
+        "amount": 440.3,
+        "customer_id": "47",
+        "merchant_id": "6",
+        "location": "New York",
+        "timestamp": "2025-02-15T06:40:42.822302Z",
+        "feature_vector": [
+            193.45,
+            90,
+            39,
+            0.68,
+            0.63
+        ]
+    },
+    {
+        "transaction_id": "74442",
+        "amount": 121.83,
+        "customer_id": "77",
+        "merchant_id": "12",
+        "location": "New York",
+        "timestamp": "2025-02-15T06:40:37.782917Z",
+        "feature_vector": [
+            186.98,
+            12,
+            16,
+            0.83,
+            0.26
+        ]
+    },
+    {
+        "transaction_id": "15463",
+        "amount": 498.6,
+        "customer_id": "96",
+        "merchant_id": "43",
+        "location": "Chicago",
+        "timestamp": "2025-02-15T06:40:36.774831Z",
+        "feature_vector": [
+            187.78,
+            25,
+            47,
+            0.31,
+            0.18
+        ]
+    },
+    {
+        "transaction_id": "58713",
+        "amount": 371.32,
+        "customer_id": "29",
+        "merchant_id": "27",
+        "location": "Houston",
+        "timestamp": "2025-02-15T06:40:35.766969Z",
+        "feature_vector": [
+            407.55,
+            51,
+            10,
+            0.82,
+            0.2
+        ]
+    },
+    {
+        "transaction_id": "33697",
+        "amount": 164.34,
+        "customer_id": "3",
+        "merchant_id": "31",
+        "location": "Houston",
+        "timestamp": "2025-02-15T06:40:33.751410Z",
+        "feature_vector": [
+            112.21,
+            9,
+            40,
+            0.75,
+            0.73
+        ]
+    },
+    {
+        "transaction_id": "46832",
+        "amount": 51.89,
+        "customer_id": "71",
+        "merchant_id": "23",
+        "location": "Los Angeles",
+        "timestamp": "2025-02-15T06:40:32.744137Z",
+        "feature_vector": [
+            92.3,
+            48,
+            31,
+            0.96,
+            0.21
+        ]
+    },
+    {
+        "transaction_id": "80565",
+        "amount": 330.72,
+        "customer_id": "89",
+        "merchant_id": "15",
+        "location": "New York",
+        "timestamp": "2025-02-15T06:40:31.736408Z",
+        "feature_vector": [
+            18.93,
+            51,
+            15,
+            0.96,
+            0.37
+        ]
+    },
+    {
+        "transaction_id": "42422",
+        "amount": 202.34,
+        "customer_id": "52",
+        "merchant_id": "7",
+        "location": "Los Angeles",
+        "timestamp": "2025-02-15T06:40:28.720977Z",
+        "feature_vector": [
+            144.77,
+            82,
+            25,
+            0.41,
+            0.58
+        ]
+    },
+    {
+        "transaction_id": "59973",
+        "amount": 376.19,
+        "customer_id": "58",
+        "merchant_id": "5",
+        "location": "Houston",
+        "timestamp": "2025-02-15T06:40:26.683532Z",
+        "feature_vector": [
+            319.15,
+            41,
+            43,
+            0.55,
+            0.47
+        ]
+    },
+    {
+        "transaction_id": "70240",
+        "amount": 169.58,
+        "customer_id": "70",
+        "merchant_id": "19",
+        "location": "Houston",
+        "timestamp": "2025-02-15T06:40:21.641463Z",
+        "feature_vector": [
+            39.64,
+            28,
+            39,
+            0.62,
+            0.67
+        ]
+    },
+    {
+        "transaction_id": "32470",
+        "amount": 350.4,
+        "customer_id": "19",
+        "merchant_id": "12",
+        "location": "Chicago",
+        "timestamp": "2025-02-15T06:40:17.615856Z",
+        "feature_vector": [
+            63.59,
+            76,
+            20,
+            0.53,
+            0.62
+        ]
+    },
+    {
+        "transaction_id": "51035",
+        "amount": 270.13,
+        "customer_id": "42",
+        "merchant_id": "47",
+        "location": "Houston",
+        "timestamp": "2025-02-15T06:40:15.599718Z",
+        "feature_vector": [
+            59.18,
+            83,
+            9,
+            0.84,
+            0.61
+        ]
+    },
+    {
+        "transaction_id": "86286",
+        "amount": 218.98,
+        "customer_id": "42",
+        "merchant_id": "3",
+        "location": "New York",
+        "timestamp": "2025-02-15T06:40:14.590572Z",
+        "feature_vector": [
+            71.86,
+            92,
+            5,
+            0.52,
+            0.36
+        ]
+    },
+    {
+        "transaction_id": "60827",
+        "amount": 324.12,
+        "customer_id": "81",
+        "merchant_id": "6",
+        "location": "Houston",
+        "timestamp": "2025-02-15T06:40:11.547138Z",
+        "feature_vector": [
+            192.46,
+            54,
+            31,
+            0.76,
+            0.69
+        ]
+    },
+    {
+        "transaction_id": "97757",
+        "amount": 258.88,
+        "customer_id": "71",
+        "merchant_id": "6",
+        "location": "Chicago",
+        "timestamp": "2025-02-15T06:40:10.524079Z",
+        "feature_vector": [
+            280.87,
+            60,
+            21,
+            0.61,
+            0.87
+        ]
+    },
+    {
+        "transaction_id": "18292",
+        "amount": 442.07,
+        "customer_id": "96",
+        "merchant_id": "18",
+        "location": "Los Angeles",
+        "timestamp": "2025-02-15T06:40:09.515042Z",
+        "feature_vector": [
+            38.32,
+            32,
+            36,
+            0.72,
+            0.15
+        ]
+    },
+    {
+        "transaction_id": "92670",
+        "amount": 134.07,
+        "customer_id": "89",
+        "merchant_id": "23",
+        "location": "Los Angeles",
+        "timestamp": "2025-02-15T06:40:06.494224Z",
+        "feature_vector": [
+            21.85,
+            38,
+            31,
+            0.07,
+            0.5
+        ]
+    },
+    {
+        "transaction_id": "52264",
+        "amount": 103.94,
+        "customer_id": "82",
+        "merchant_id": "10",
+        "location": "Chicago",
+        "timestamp": "2025-02-15T06:40:05.485543Z",
+        "feature_vector": [
+            119.63,
+            92,
+            25,
+            0.23,
+            0.53
+        ]
+    },
+    {
+        "transaction_id": "57484",
+        "amount": 208.5,
+        "customer_id": "58",
+        "merchant_id": "46",
+        "location": "Houston",
+        "timestamp": "2025-02-15T06:40:02.313806Z",
+        "feature_vector": [
+            303.8,
+            71,
+            34,
+            0.56,
+            0.27
+        ]
+    },
+    {
+        "transaction_id": "51230",
+        "amount": 402.68,
+        "customer_id": "97",
+        "merchant_id": "15",
+        "location": "Chicago",
+        "timestamp": "2025-02-15T06:40:00.271602Z",
+        "feature_vector": [
+            174.23,
+            92,
+            31,
+            0.35,
+            0.94
+        ]
+    },
+    {
+        "transaction_id": "16880",
+        "amount": 421.5,
+        "customer_id": "1",
+        "merchant_id": "2",
+        "location": "Chicago",
+        "timestamp": "2025-02-15T06:39:56.243550Z",
+        "feature_vector": [
+            226.78,
+            43,
+            21,
+            0.34,
+            0.42
+        ]
+    },
+    {
+        "transaction_id": "80485",
+        "amount": 59.89,
+        "customer_id": "28",
+        "merchant_id": "27",
+        "location": "Los Angeles",
+        "timestamp": "2025-02-15T06:39:55.234863Z",
+        "feature_vector": [
+            89.73,
+            100,
+            15,
+            0.95,
+            0.26
+        ]
+    },
+    {
+        "transaction_id": "35391",
+        "amount": 138.08,
+        "customer_id": "97",
+        "merchant_id": "44",
+        "location": "Chicago",
+        "timestamp": "2025-02-15T06:39:54.218829Z",
+        "feature_vector": [
+            133.72,
+            20,
+            31,
+            0.85,
+            0.62
+        ]
+    },
+    {
+        "transaction_id": "21352",
+        "amount": 46.94,
+        "customer_id": "76",
+        "merchant_id": "32",
+        "location": "Houston",
+        "timestamp": "2025-02-15T06:39:53.209170Z",
+        "feature_vector": [
+            122.25,
+            72,
+            45,
+            0.27,
+            0.72
+        ]
+    },
+    {
+        "transaction_id": "95876",
+        "amount": 226.29,
+        "customer_id": "7",
+        "merchant_id": "27",
+        "location": "Houston",
+        "timestamp": "2025-02-15T06:39:52.196490Z",
+        "feature_vector": [
+            111.57,
+            27,
+            39,
+            0.32,
+            0.7
+        ]
+    },
+    {
+        "transaction_id": "69157",
+        "amount": 146.89,
+        "customer_id": "77",
+        "merchant_id": "9",
+        "location": "Chicago",
+        "timestamp": "2025-02-15T06:39:50.176726Z",
+        "feature_vector": [
+            147.96,
+            17,
+            9,
+            0.16,
+            0.29
+        ]
+    },
+    {
+        "transaction_id": "31869",
+        "amount": 105.05,
+        "customer_id": "71",
+        "merchant_id": "7",
+        "location": "Houston",
+        "timestamp": "2025-02-15T06:39:49.170426Z",
+        "feature_vector": [
+            85.83,
+            34,
+            31,
+            0.42,
+            0.16
+        ]
+    },
+    {
+        "transaction_id": "85363",
+        "amount": 351.02,
+        "customer_id": "85",
+        "merchant_id": "11",
+        "location": "New York",
+        "timestamp": "2025-02-15T06:39:47.156270Z",
+        "feature_vector": [
+            117.51,
+            62,
+            13,
+            0.79,
+            0.88
+        ]
+    },
+    {
+        "transaction_id": "92127",
+        "amount": 115.73,
+        "customer_id": "71",
+        "merchant_id": "28",
+        "location": "Los Angeles",
+        "timestamp": "2025-02-15T06:39:46.148212Z",
+        "feature_vector": [
+            126.82,
+            32,
+            46,
+            0.72,
+            0.34
+        ]
+    },
+    {
+        "transaction_id": "54167",
+        "amount": 419.65,
+        "customer_id": "91",
+        "merchant_id": "32",
+        "location": "Los Angeles",
+        "timestamp": "2025-02-15T06:39:43.102147Z",
+        "feature_vector": [
+            171.16,
+            49,
+            39,
+            0.0,
+            0.56
+        ]
+    },
+    {
+        "transaction_id": "38685",
+        "amount": 93.04,
+        "customer_id": "57",
+        "merchant_id": "45",
+        "location": "New York",
+        "timestamp": "2025-02-15T06:39:42.032657Z",
+        "feature_vector": [
+            352.21,
+            17,
+            15,
+            0.52,
+            0.29
+        ]
+    },
+    {
+        "transaction_id": "92452",
+        "amount": 212.36,
+        "customer_id": "55",
+        "merchant_id": "29",
+        "location": "Houston",
+        "timestamp": "2025-02-15T06:39:39.003097Z",
+        "feature_vector": [
+            220.55,
+            31,
+            41,
+            0.85,
+            0.49
+        ]
+    },
+    {
+        "transaction_id": "18017",
+        "amount": 401.16,
+        "customer_id": "65",
+        "merchant_id": "28",
+        "location": "Los Angeles",
+        "timestamp": "2025-02-15T06:39:32.890329Z",
+        "feature_vector": [
+            26.2,
+            81,
+            6,
+            0.05,
+            0.77
+        ]
+    },
+    {
+        "transaction_id": "43146",
+        "amount": 64.95,
+        "customer_id": "89",
+        "merchant_id": "44",
+        "location": "Chicago",
+        "timestamp": "2025-02-15T06:39:31.882749Z",
+        "feature_vector": [
+            116.14,
+            50,
+            24,
+            0.24,
+            0.44
+        ]
+    },
+    {
+        "transaction_id": "15575",
+        "amount": 424.21,
+        "customer_id": "37",
+        "merchant_id": "31",
+        "location": "New York",
+        "timestamp": "2025-02-15T06:39:30.873818Z",
+        "feature_vector": [
+            359.94,
+            32,
+            15,
+            0.33,
+            0.69
+        ]
+    },
+    {
+        "transaction_id": "93169",
+        "amount": 251.38,
+        "customer_id": "51",
+        "merchant_id": "48",
+        "location": "Houston",
+        "timestamp": "2025-02-15T06:39:29.865136Z",
+        "feature_vector": [
+            34.69,
+            94,
+            6,
+            0.19,
+            0.17
+        ]
+    },
+    {
+        "transaction_id": "97262",
+        "amount": 66.28,
+        "customer_id": "73",
+        "merchant_id": "24",
+        "location": "New York",
+        "timestamp": "2025-02-15T06:39:28.857696Z",
+        "feature_vector": [
+            12.74,
+            70,
+            12,
+            0.13,
+            0.62
+        ]
+    },
+    {
+        "transaction_id": "18485",
+        "amount": 429.28,
+        "customer_id": "32",
+        "merchant_id": "46",
+        "location": "Los Angeles",
+        "timestamp": "2025-02-15T06:39:27.849752Z",
+        "feature_vector": [
+            385.55,
+            30,
+            40,
+            0.3,
+            0.49
+        ]
+    },
+    {
+        "transaction_id": "61735",
+        "amount": 226.36,
+        "customer_id": "57",
+        "merchant_id": "44",
+        "location": "Los Angeles",
+        "timestamp": "2025-02-15T06:39:26.842536Z",
+        "feature_vector": [
+            208.98,
+            42,
+            45,
+            0.3,
+            0.22
+        ]
+    },
+    {
+        "transaction_id": "25132",
+        "amount": 450.75,
+        "customer_id": "82",
+        "merchant_id": "30",
+        "location": "Los Angeles",
+        "timestamp": "2025-02-15T06:39:25.834468Z",
+        "feature_vector": [
+            75.22,
+            22,
+            23,
+            0.52,
+            0.56
+        ]
+    }
+]
