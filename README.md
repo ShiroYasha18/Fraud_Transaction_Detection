@@ -1,118 +1,140 @@
-# Fraud Detection System Documentation
+# **Fraud Detection System**
 
-## Overview
-This fraud detection system utilizes machine learning (Isolation Forest) to classify financial transactions as either normal or fraudulent based on extracted feature vectors. The system integrates with Kafka for real-time transaction streaming and Redis for caching fraud alerts.
+## **Overview**
 
-## Architecture
-### Components:
-1. **API Layer (FastAPI)**
-   - Handles incoming transaction requests.
-   - Sends transactions to Kafka for processing.
-   
-2. **Kafka (Message Broker)**
-   - Streams transactions to be processed asynchronously.
-   
-3. **Fraud Detection Service**
-   - Consumes Kafka messages.
-   - Uses an Isolation Forest model to detect fraud.
-   - Stores fraud alerts in Redis.
-   
-4. **Redis (Cache Storage)**
-   - Stores flagged fraudulent transactions for quick retrieval.
-   
-## Machine Learning Model
-### Model: Isolation Forest
-- **Input Features:**
-  - `amount`
-  - `customer_id`
-  - `merchant_id`
-  - `feature1`
-  - `feature2`
-- **Training:**
-  - Trained on synthetic transaction data.
-  - Identifies anomalies using an unsupervised learning approach.
-- **Prediction:**
-  - Returns `-1` for fraudulent transactions, `1` for normal ones.
+This project is a fraud detection system using **Isolation Forest**, **FastAPI**, **Kafka**, and **Redis**. It processes transactions, classifies them as fraudulent or legitimate, and stores the results for further analysis.
 
-## API Endpoints
-### 1. **Process Transaction**
-   - **URL:** `/process_transaction/`
-   - **Method:** `POST`
-   - **Request Body:**
-     ```json
-     {
-       "transaction_id": "12345",
-       "amount": 120.5,
-       "customer_id": "32",
-       "merchant_id": "14",
-       "location": "New York",
-       "timestamp": "2025-02-15T12:34:56Z",
-       "feature_vector": [120.5, 32, 14, 0.8, 0.6]
-     }
-     ```
-   - **Response:**
-     ```json
-     { "status": "Transaction sent for processing." }
-     ```
+## **Features**
 
-### 2. **Retrieve Fraud Alerts**
-   - **URL:** `/fraud_alerts/`
-   - **Method:** `GET`
-   - **Response:**
-     ```json
-     [
-       {
-         "transaction_id": "12345",
-         "amount": 120.5,
-         "customer_id": "32",
-         "merchant_id": "14",
-         "location": "New York",
-         "timestamp": "2025-02-15T12:34:56Z"
-       }
-     ]
-     ```
+* **Real-time transaction processing**  
+* **Fraud detection using Isolation Forest**  
+* **Kafka for event streaming**  
+* **Redis for storing fraud alerts**  
+* **Automated transaction submission using `rn.py`**
 
-## Kafka & Redis Usage
-### **Kafka**
-- Handles asynchronous message processing.
-- Allows scalability in real-time fraud detection.
+## **Installation and Setup**
 
-### **Redis**
-- Stores flagged fraudulent transactions for quick lookup.
-- Avoids repeated processing of fraudulent transactions.
+### **Prerequisites**
 
-## Common Errors & Fixes
-### 1. **Missing Fields in API Request**
-   - **Error:**
-     ```json
-     { "detail": [{"msg": "Field required", "loc": ["body", "amount"]}] }
-     ```
-   - **Fix:** Ensure all required fields are included in the request.
+Make sure you have the following installed:
 
-### 2. **Invalid Feature Vector Size**
-   - **Error:**
-     ```plaintext
-     ValueError: X has 4 features, but IsolationForest is expecting 5 features.
-     ```
-   - **Fix:** Ensure `feature_vector` has all required features.
+* Python 3.11+  
+* Kafka  
+* Redis  
+* FastAPI
 
-## Future Improvements
-- Improve fraud detection accuracy with deep learning models (e.g., LSTMs for sequential patterns).
-- Enhance real-time analysis with Apache Flink or Spark Streaming.
-- Implement a dashboard for monitoring transactions.
+### **Setup Commands**
 
-## FAQs & Presentation Questions
-1. **Why use Isolation Forest for fraud detection?**
-   - It’s effective for detecting outliers in an unsupervised setting.
+\# Clone the repository  
+git clone https://github.com/your-repo/fraud-detection.git  
+cd fraud-detection
 
-2. **How does Kafka help in fraud detection?**
-   - Kafka enables scalable, real-time streaming of transaction data.
+\# Create a virtual environment  
+python \-m venv .venv  
+source .venv/bin/activate  \# On Windows use \`.venv\\Scripts\\activate\`
 
-3. **Why use Redis instead of a database for fraud alerts?**
-   - Redis provides faster read/write access for real-time fraud detection.
+\# Install dependencies  
+pip install \-r requirements.txt
 
-4. **How can this system be extended to handle large-scale transactions?**
-   - By deploying Kafka in a cluster and using distributed ML models.
+\# Start Kafka and Redis (Ensure they are running before execution)  
+kafka-server-start.sh config/server.properties  \# Start Kafka  
+redis-server  \# Start Redis
+
+## **Running the System**
+
+### **Train and Save the Model**
+
+python model.py
+
+### **Start the FastAPI Server**
+
+uvicorn app:app \--reload
+
+### **Run `rn.py` for Automated Processing**
+
+The `rn.py` script automates sending transactions and recording fraud alerts.
+
+python rn.py
+
+Running `rn.py` will:
+
+1. Generate test transactions.  
+2. Send them to the API.  
+3. Record fraud alerts from Redis.
+
+## **API Endpoints**
+
+### **1\. Submit a Transaction**
+
+**Endpoint:** `POST /process_transaction/`
+
+#### **Request Format**
+
+{  
+  "transaction\_id": "12345",  
+  "amount": 120.5,  
+  "customer\_id": "32",  
+  "merchant\_id": "14",  
+  "location": "New York",  
+  "timestamp": "2025-02-15T12:34:56Z",  
+  "feature\_vector": \[120.5, 32, 14, 0.8, 0.6\]  
+}
+
+#### **Response**
+
+{"status": "Transaction sent for processing."}
+
+### **2\. Get Fraud Alerts**
+
+**Endpoint:** `GET /fraud_alerts/`
+
+#### **Response Example**
+
+\[  
+  {"transaction\_id": "12345", "fraud": true}  
+\]
+
+## **How Fraud is Detected**
+
+* The Isolation Forest model is trained on a dataset with features like transaction amount, customer ID, merchant ID, and additional numeric features.  
+* It classifies transactions based on the anomaly score derived from the feature vector.  
+* Transactions with significantly different patterns from normal transactions are flagged as fraud.
+
+## **Technologies Used**
+
+* **FastAPI**: API development  
+* **Scikit-Learn**: Machine learning (Isolation Forest)  
+* **Kafka**: Event streaming for transactions  
+* **Redis**: Storing fraud alerts  
+* **Joblib**: Model persistence
+
+## **Common Questions & Answers**
+
+### **Q1: Why use Kafka?**
+
+Kafka allows event-driven transaction processing, making it scalable for high-volume transactions.
+
+### **Q2: What is the role of Redis?**
+
+Redis stores fraud alerts in-memory for fast retrieval.
+
+### **Q3: How does the system classify frauds?**
+
+It uses Isolation Forest, which detects anomalies in the feature vector of transactions.
+
+### **Q4: What happens when I run `rn.py`?**
+
+It automatically sends transactions and records fraud alerts without manual intervention.
+
+### **Q5: What is a normal feature vector?**
+
+A normal feature vector consists of standard transaction behavior derived from historical data.
+
+## **Conclusion**
+
+This system provides an efficient way to detect fraudulent transactions in real-time using machine learning and event-driven processing.
 
 ---
-This documentation provides a comprehensive overview of the fraud detection system, its architecture, API, and improvements. 🚀
+
+**Author:** Your Name  
+ **Date:** 2025-02-15
